@@ -21,28 +21,32 @@ ul{
   display: -ms-flex;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1280px;
 }
 
 .menu li a{
-  color: #929292;
+  color: #b5b5b5;
   padding: 18px;
 }
 .button-list li a{
   color: #000;
   padding: 18px;
 }
-.menu-list::before{
-  content:'';
+.menu li a:hover{
+  color:#979797;
+}
+ul{
+  position: relative;
+}
+#u-Bar{
+  display:none;
   width:25px;
   height: 2px;
   position: absolute;
   background-color:#D94F5C;
   z-index: 999;
-  animation: move 2s infinite;
-}
-@@keyframes move{
-  100%{
-    left:500px;
-  }
+  left: 0px;
+  top: 30px;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
 }
