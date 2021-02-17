@@ -8,10 +8,13 @@ a{
   color:#000;
   text-decoration: none;
 }
+.ani_2, .ani_3, .ani_4, .ani_5, .ani_6{
+  display: none;
+}
 section{
   box-sizing: border-box;
   padding: 32px 0 128px 0;
-  background-color:#e3e2b4;
+  background-color:#DCEBFF;
 }
 li{
     list-style:  none;
@@ -23,16 +26,17 @@ ul{
   justify-content: center;
   width: 1280px;
 }
-
 .menu li a{
-  color: #b5b5b5;
   padding: 18px;
+}
+.hover{
+  color: #b5b5b5;
 }
 .button-list li a{
   color: #000;
   padding: 18px;
 }
-.menu li a:hover{
+.hover:hover{
   color:#979797;
 }
 ul{
@@ -49,4 +53,17 @@ ul{
   top: 30px;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+}
+.active1{
+  transition-duration: 0.2s;
+  color:#D94F5C
+}
+.active2{
+  transition-duration: 0.2s;
+  color:#D94F5C;
+
+}
+.ani_2 a{
+  border-top: 2px solid #D94F5C;
+  border-bottom: 2px solid #D94F5C;
 }
