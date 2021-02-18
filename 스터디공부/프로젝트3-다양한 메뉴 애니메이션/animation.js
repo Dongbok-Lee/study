@@ -20,9 +20,12 @@ function move1(t){
     Bar.style.display='block';
 }
 function aniList(t){
+  var button = document.querySelector('.button'+t);
   var btn = document.querySelector('.ani_'+t);
   for(var i = 1; i<7; i++){
     document.querySelector('.ani_'+i).style.display='none';
+    document.querySelector('.button'+i).style.color='#b5b5b5';
   }
   btn.style.display='block';
+  button.style.color='#D94F5C';
 }
