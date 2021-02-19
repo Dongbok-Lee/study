@@ -36,7 +36,7 @@ ul {
   justify-content: center;
   width: 1280px;
 }
-
+/*ani_1*/
 .menu li a {
   padding: 18px;
 }
@@ -80,7 +80,7 @@ ul {
   color: #D94F5C;
   transition-duration: 0.2s;
 }
-
+/*button*/
 #button{
   padding: 0 7px 0;
   margin-left: 5px;
@@ -269,3 +269,185 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*ani 5*/
+.ani_5 .hover{
+  position: relative;
+  padding: 12px;
+}
+.ani_5 li{
+  position: relative;
+  padding: 0;
+  margin: 0 6px 0;
+}
+.ani_5 a::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  width: 0%;
+  border-top: 4px solid #D94F5C;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_5 a:focus::before{
+  width: 100%;
+  transition-delay: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_5 a::after{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  content: '';
+  width: 0%;
+  border-top: 4px solid #D94F5C;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_5 a:focus::after{
+  width: 100%;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_5 #left1{
+  top: 0;
+  right: 0;
+  position: absolute;
+  border-right: 4px solid #D94F5C;
+  height: 0%;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+#menu-listt:focus > #left1{
+    height: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_5 #right1{
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-left: 4px solid #D94F5C;
+  height: 0%;
+  transition-delay: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+#menu-listt:focus > #right1{
+    height: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*ani_6*/
+.ani_6 .hover{
+  position: relative;
+  padding: 12px;
+}
+.ani_6 li{
+  position: relative;
+  padding: 0;
+  margin: 0 6px 0;
+}
+.ani_6 a::before{
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  width: 0%;
+  border-top: 2px solid #D94F5C;
+  transition-delay: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_6 a:focus::before{
+  width: 100%;
+  transition-delay: 0.2s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_6 a::after{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  content: '';
+  width: 0%;
+  border-top: 2px solid #D94F5C;
+  transition-duration: 0.1s;
+  transition-delay: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_6 a:focus::after{
+  width: 100%;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_6 #left2{
+  top: 0;
+  right: 0;
+  position: absolute;
+  border-right: 2px solid #D94F5C;
+  height: 0%;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+#menu-lists:focus > #left2{
+    height: 100%;
+    transition-delay: 0.3s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ani_6 #right2{
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-left: 2px solid #D94F5C;
+  height: 0%;
+  transition-delay: 0.2s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+#menu-lists:focus > #right2{
+    height: 100%;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
