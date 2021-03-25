@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4fecd3c-a01b-48bc-ba13-bd9d0c58813e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/끝말잇기/Ending.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/끝말잇기/Ending.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/끝말잇기/끝말잇기.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/숫자야구/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/숫자야구/숫자야구.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/숫자야구/숫자야구.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/틱택토/틱택토.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/틱택토/틱택토.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/게임만들기/틱택토/틱택토.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/main/java/com/example/firstspring/FirstspringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/main/java/com/example/firstspring/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/스프링/firstspring/firstspring/src/test/java/com/example/firstspring/FirstspringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/arrow_btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/banner4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/bottom_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/con2_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/con3_bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/con3_bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/con3_bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/con3_bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/main2_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/main_visual.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/pre_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/img/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/js/scrolla.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../개인공부/컨시어지_header/폰트정보!!!!!!!!!!!!.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pwV9w1lzz1WO8tHjveSfhszZC3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4fecd3c-a01b-48bc-ba13-bd9d0c58813e" name="Default Changelist" comment="" />
+      <created>1616093991606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616093991606</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="504" y="161" width="1200" height="800" key="AVDManager" timestamp="1616116849015">
+      <screen x="0" y="0" width="1920" height="1152" />
+    </state>
+    <state x="504" y="161" width="1200" height="800" key="AVDManager/0.0.1920.1152@0.0.1920.1152" timestamp="1616116849015" />
+  </component>
+</project>
