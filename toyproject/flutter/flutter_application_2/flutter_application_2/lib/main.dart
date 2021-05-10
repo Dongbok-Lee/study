@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'numtable.dart';
-import 'function.dart';
 
 void main() => runApp(MyApp());
 
@@ -54,40 +53,40 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
       ),
       body: Column(
-
         children: <Widget>[
-          Expanded(
-            flex:2,
+          Container(
             child: Container(
-
+              height:200,
+            ),
           ),
-          ),
-          Expanded(
-            flex: 8,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(40.0, 40.0, 40.0, 60.0),
+          Container(
               child: Container(
-                height: 700,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: const Color(0xffBBADA0),
-                ),
+               child: Center(
+                child: Container(
+                  height: 350.0,
+                  width: 350.0,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8.0),
+                    color: const Color(0xffBBADA0),
+                  ),
 
-              child: GridView.builder(
-                itemCount: numTable.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-                itemBuilder:(BuildContext context, int index){
-                    return MyTable(
-                      buttonText: numTable[index],
-                      color: tableColor(numTable[index]),
-                      textColor: textColor(numTable[index]),
-                    );
-                },
-              ),
+                child: Expanded(
+                  child: GridView.builder(
+                    itemCount: numTable.length,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+                    itemBuilder:(BuildContext context, int index){
+                        return MyTable(
+                          buttonText: numTable[index],
+                          color: tableColor(numTable[index]),
+                          textColor: textColor(numTable[index]),
+                        );
+                    },
+                  ),
+                ),
           ),
-            ),),
-          Expanded(
-            flex: 1,
+              ),),
+            ),
+         Container(
             child: Padding(
               padding: const EdgeInsets.only(bottom:20.0),
               child: ElevatedButton(
