@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'function.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:swipedetector/swipedetector.dart';
 import 'numtable.dart';
 
 void main() => runApp(MyApp());
@@ -26,7 +29,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  SharedPreferences _prefs;
+  String counterKey = 'highscore';
+  int combo_score = 0;
+  int high_score = 0;
   final List<dynamic> numTable = List.filled(16, ' ');
   dynamic init(table){
     for(int i = 0; i<=15; i++){
@@ -34,6 +40,28 @@ class _MyHomePageState extends State<MyHomePage> {
     }
     table[Random().nextInt(16)] = '2';
   } //초기화 함수
+  @override
+  void initState(){
+    super.initState();
+    _loadScore();
+  }
+
+  _loadScore() async{
+    _prefs = await SharedPreferences.getInstance();
+    setState(() {
+      high_score = (_prefs.getInt('highscore') ?? 0);
+    });
+  }
+  _saveScore() async{
+    _prefs = await SharedPreferences.getInstance();
+    setState(() {
+    if(combo_score > (_prefs.getInt('highscore') ?? 0)) {
+      _prefs.setInt(counterKey, combo_score);
+      print(_prefs.getInt('highscore'));
+      high_score = (_prefs.getInt('highscore') ?? 0);
+      }
+    });
+  }
 
 
   @override
@@ -52,14 +80,47 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: const Color(0xff786F66),
         centerTitle: true,
       ),
-      body: Column(
+      body:
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-            child: Container(
-              height:200,
+            height: 100,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  child: Text('SCORE\n''$combo_score',style: TextStyle(fontSize: 23, fontFamily:'Caveat',),textAlign: TextAlign.center,),
+                      width: 130,
+                      height: 70,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 5,
+                  color: const Color(0xffBBADA0),
+                ),
+                borderRadius: BorderRadius.circular(8.0),
+                color : const Color(0xffCDC1B4),
+
+                    ),
+                ),
+                Container(
+                  child: Text('HIGH SCORE\n''$high_score',style: TextStyle(fontSize: 23, fontFamily:'Caveat',),textAlign: TextAlign.center,),
+                  width: 130,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 5,
+                        color: const Color(0xffBBADA0),
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                    color : const Color(0xffCDC1B4),
+                  ),
+                ),
+              ],
             ),
           ),
-          Container(
+          SwipeDetector(
+          child:Container(
               child: Container(
                child: Center(
                 child: Container(
@@ -70,33 +131,70 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: const Color(0xffBBADA0),
                   ),
 
-                child: Expanded(
-                  child: GridView.builder(
-                    itemCount: numTable.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-                    itemBuilder:(BuildContext context, int index){
-                        return MyTable(
-                          buttonText: numTable[index],
-                          color: tableColor(numTable[index]),
-                          textColor: textColor(numTable[index]),
-                        );
-                    },
-                  ),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: GridView.builder(
+                        physics: NeverScrollableScrollPhysics(),
+                        itemCount: numTable.length,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+                        itemBuilder:(BuildContext context, int index){
+                            return MyTable(
+                              buttonText: numTable[index],
+                              color: tableColor(numTable[index]),
+                              textColor: textColor(numTable[index]),
+                            );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
           ),
               ),),
             ),
+            onSwipeRight: (){
+              print('right!');
+            setState(() {
+              combo_score += right(numTable);
+              _saveScore();
+            });
+            },
+            onSwipeLeft: (){
+              print('left!');
+              setState(() {
+                combo_score += left(numTable);
+                _saveScore();
+              });
+            },
+            onSwipeUp: (){
+              print('up!');
+              setState(() {
+                combo_score += up(numTable);
+                _saveScore();
+              });
+            },
+            onSwipeDown: (){
+              print('down!');
+              setState(() {
+                combo_score += down(numTable);
+                _saveScore();
+              });
+            },
+          ),
          Container(
             child: Padding(
-              padding: const EdgeInsets.only(bottom:20.0),
+              padding: const EdgeInsets.only(bottom:10.0),
               child: ElevatedButton(
 
               onPressed: (){
                 setState(() {
                  init(numTable);
+                 combo_score = 0;
+                 print('init!');
                 });
               },
               child: Text('Refresh'),
+
           ),
             ),
           ),
@@ -146,7 +244,6 @@ tableColor(context){
       color = const Color(0xffEDD073);
       break;
   }
-  print(color);
   return color;
 }
 textColor(context){
